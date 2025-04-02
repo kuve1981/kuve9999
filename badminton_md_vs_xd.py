@@ -49,10 +49,10 @@ else:
 
 # 시각화
 fig, ax = plt.subplots()
-categories = ["남자복식 (MD)", "혼합복식 (XD)"]
+categories = ["MD", "XD"]
 scores = [md_score, xd_score]
 ax.bar(categories, scores, color=["blue", "orange"])
-ax.set_ylabel("적합도 점수")
-ax.set_title("남자복식 vs 혼합복식 적합성 분석")
+ax.set_ylabel("score")
+ax.set_title("MD vs XD TEST")
 
 st.pyplot(fig)
