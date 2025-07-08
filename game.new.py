@@ -99,10 +99,10 @@ if not matches:
     st.warning("⚠️ 생성된 대진표가 없습니다. 총 인원을 늘려보세요.")
 else:
     for i, (team1, team2) in enumerate(matches, 1):
-        t1 = f"{team1[0]['name']} & {team1[1]['name']}"
-        t2 = f"{team2[0]['name']} & {team2[1]['name']}"
-        st.markdown(f"**게임 {i}**  
-        {t1} 🆚 {t2}")
+    t1 = f"{team1[0]['name']} & {team1[1]['name']}"
+    t2 = f"{team2[0]['name']} & {team2[1]['name']}"
+    st.markdown(f"""**게임 {i}**
+{t1} 🆚 {t2}""")
 
 # -----------------------------
 # 🔢 참가 인원 수 확인
