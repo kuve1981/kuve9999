@@ -135,9 +135,10 @@ if submitted:
         for i, (t1, t2, kind) in enumerate(matches, 1):
             team1 = f"{t1[0]['name']}({t1[0]['grade']}) & {t1[1]['name']}({t1[1]['grade']})"
             team2 = f"{t2[0]['name']}({t2[0]['grade']}) & {t2[1]['name']}({t2[1]['grade']})"
-            st.markdown(f"**게임 {i} - {kind}**  
-{team1} 🆚 {team2}")
+            st.markdown(f"""**게임 {i} - {kind}**
+        {team1} 🆚 {team2}""")    
 
+        
         st.subheader("👤 개인별 경기 수")
         for p in player_list:
             st.markdown(f"- {p['name']}: {player_games[p['name']]}게임")
