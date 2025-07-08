@@ -105,9 +105,10 @@ if submitted:
         for i, (team1, team2) in enumerate(matches, 1):
             t1 = f"{team1[0]['name']} & {team1[1]['name']}"
             t2 = f"{team2[0]['name']} & {team2[1]['name']}"
-            st.markdown(f"**게임 {i}**  
-            {t1} 🆚 {t2}")
+            st.markdown(f"""**게임 {i}**
+            {t1} 🆚 {t2}""")
 
+    
     # -----------------------
     # 5. 개인별 경기 수
     # -----------------------
